@@ -5,10 +5,3 @@ enabled: true
 migrate:
   enabled: true
   period: "168h"        # reconcile weekly; clamped to a 1-day minimum
-  ignore:
-    files:
-      - "release.yml"   # leave specific workflow files untouched
-      - "*.deprecated.yml"
-    actions:
-      - "actions/checkout"  # leave specific upstream actions untouched
-      - "actions/*"
